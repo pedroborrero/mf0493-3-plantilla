@@ -1,22 +1,28 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="TODO: título SEO descriptivo de la página de inicio"
-  description="TODO: meta descripción de unas 150 caracteres que resuma el contenido."
+  title="Café Pedro | Café y desayunos"
+  description="Disfruta en Café Pedro de café recién hecho, desayunos deliciosos y repostería en un ambiente acogedor."
 >
-  <h1>TODO: título principal de la web</h1>
-  <p>TODO: breve presentación del proyecto.</p>
+  <h1>Bienvenidos a Café Pedro</h1>
+  <p>
+    Un rincón donde disfrutar del aroma del café recién hecho, desayunos
+    deliciosos y momentos tranquilos en buena compañía.
+  </p>
 
   <img
-    src={`${base}images/ejemplo.svg`}
-    alt="TODO: describe con precisión qué muestra la imagen"
+    src={`${base}images/cafe.png`}
+    alt="Café recién preparado acompañado de repostería artesanal"
     width="640"
     height="360"
   />
 
   <h2>Lo que ofrecemos</h2>
-  <p>TODO: texto relacionado con la temática elegida.</p>
+  <p>
+    Disfruta de nuestros cafés, desayunos y dulces, preparados para que puedas
+    compartir un buen momento en cualquier momento del día.
+  </p>
 </BaseLayout>

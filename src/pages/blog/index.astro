@@ -4,25 +4,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 // BASE_URL es '/' en local y '/nombre-repo/' al publicar en GitHub Pages.
 const base = import.meta.env.BASE_URL;
 
-// Índice automático del blog: añade un objeto por cada artículo.
-// Si cambias el título de un artículo, actualízalo también aquí.
-// Las rutas se escriben sin la barra inicial: se les añade BASE_URL al renderizar.
 const articulos = [
   {
-    title: 'TODO: título del artículo 1',
+    title: 'El café de especialidad: mucho más que una taza',
     href: 'blog/articulo-1/',
-    description: 'TODO: resumen breve del artículo 1.',
+    description: 'Descubre el origen, la calidad y los aromas del café de especialidad.',
   },
   {
-    title: 'TODO: título del artículo 2',
+    title: 'Cómo preparar un buen café en casa',
     href: 'blog/articulo-2/',
-    description: 'TODO: resumen breve del artículo 2.',
+    description: 'Aprende algunos consejos para disfrutar de un café delicioso en casa.',
   },
 ];
 ---
 
-<BaseLayout title="Blog | TODO: nombre de la empresa" description="TODO: meta descripción de la página del blog">
-  <h1>TODO: título del blog</h1>
+<BaseLayout
+  title="Blog | Café Pedro"
+  description="Descubre artículos, consejos y curiosidades sobre el café, su preparación y sus aromas."
+>
+  <h1>Blog de Café Pedro</h1>
 
   <ul>
     {articulos.map((articulo) => (
